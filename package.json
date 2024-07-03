@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@hookform/resolvers": "^3.6.0",
+    "@phosphor-icons/react": "^2.1.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
@@ -11,19 +13,27 @@
     "@types/react": "^17.0.80",
     "@types/react-dom": "^17.0.25",
     "@types/react-native": "^0.65.36",
+    "axios": "^1.7.2",
     "native-base": "^3.4.0",
+    "native-base-autocomplete": "github:thg303/native-base-autocomplete",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.0",
+    "react-native-masked-text": "^1.13.0",
     "react-native-safe-area-context": "^3.4.1",
     "react-native-svg": "^12.5.1",
     "react-native-web": "^0.17.7",
+    "react-router-dom": "^6.24.0",
     "react-scripts": "5.0.1",
+    "react-toastify": "^10.0.5",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "json-server -w db.json --port 1000",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -44,5 +54,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "ajv": "^8.16.0",
+    "json-server": "^1.0.0-beta.1"
   }
 }
